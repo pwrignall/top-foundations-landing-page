@@ -134,6 +134,8 @@ button {
     border-radius: 6px;
     width: 250px;
     height: 250px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .quotation {
