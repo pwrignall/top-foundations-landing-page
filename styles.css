@@ -1,5 +1,6 @@
 :root {
     --content-width: 1280px;
+    --content-width-narrower: calc(var(--content-width) - 160px);
     --dark-blue: #1f2937;
     --bright-blue: #3882f6;
     --grey: #e5e7eb;
@@ -97,4 +98,54 @@ header {
 .hero-image img {
     max-width: 100%;
     height: auto;
+}
+
+.card-container {
+    width: var(--content-width-narrower);
+    text-align: center;
+    color: var(--dark-blue);
+    padding: 30px 16px;
+}
+
+.card-container h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    flex: 1;
+}
+
+.card img {
+    border: 3px solid var(--bright-blue);
+    border-radius: 6px;
+    width: 250px;
+    height: 250px;
+}
+
+.quotation {
+    width: var(--content-width-narrower);
+    padding: 100px 16px;
+    color: var(--dark-blue);
+}
+
+.quotation blockquote {
+    font-size: 36px;
+    font-weight: 200;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.quotation figcaption {
+    font-weight: 800;
+    font-size: 18px;
+    text-align: right;
 }
